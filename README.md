@@ -3,7 +3,9 @@ A minimal implementation of Deep Hedging (Bühler et al. 2019) in PyTorch. Compa
 
 PyTorchを用いたDeep Hedging（Bühler et al. 2019）の最小限の実装をする。取引コスト下で学習された戦略と古典的なデルタヘッジングを比較する。
 
-**<span style="color: red; ">これは実データでの学習ではなく、シミュレーション実験です</span>**
+<span style="color: red; ">**※これは実データでの学習ではなく、シミュレーション実験です**</span>
+
+<span style="color: red; ">**※Windowsでターミナルから実行する際は、スクリプトとして直接実行するのではなく、モジュール実行機能を使うコマンドで実行してください。**</span>
 
 **目的**  
 ニューラルネットワークを用いてヨーロピアンコールのヘッジ戦略（ディスクリート再調整）を学習し、従来のデルタヘッジと比較する。取引コスト（比例コスト）を考慮し、最終のヘッジ損益（P&L）を最小化することを目標とする。
