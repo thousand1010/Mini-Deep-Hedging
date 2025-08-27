@@ -8,8 +8,10 @@ import torch
 import torch.optim as optim
 from src.model import PolicyNet
 from src.data import gbm_simulate
+import sys
 import os
 from tqdm import tqdm
+import japanize_matplotlib
 
 
 def payoff_call(S_T: torch.Tensor, K: float) -> torch.Tensor:
@@ -84,6 +86,7 @@ def train(args):
 
 
 if __name__ == "__main__":
+
     parser = argparse.ArgumentParser()
     parser.add_argument("--S0", type=float, default=100.0)
     parser.add_argument("--K", type=float, default=100.0)
